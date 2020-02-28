@@ -1,0 +1,11 @@
+version: '2'
+services:
+  springbootrestdistsystem101-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/SpringBootRestDistSystem101/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=SpringBootRestDistSystem101
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
